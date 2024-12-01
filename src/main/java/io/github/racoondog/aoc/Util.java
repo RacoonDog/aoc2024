@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Util {
-    private static final String BASE_URL = "https://adventofcode.com/2023/day/%d/input";
+    private static final String BASE_URL = "https://adventofcode.com/2024/day/%d/input";
 
     public static void downloadInput(int day, Path file) {
         if (!Files.exists(file.getParent())) {
