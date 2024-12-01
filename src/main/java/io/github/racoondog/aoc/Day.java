@@ -26,7 +26,7 @@ public abstract class Day {
 
             if (firstResult != null) {
                 System.out.printf("[Advent of Code] Day %d first half solution '%s'.%n", this.day, firstResult);
-                System.out.printf("[Advent of Code] Took %.2f μs.", (firstEndTime - firstStartTime) / 1000f);
+                System.out.printf("[Advent of Code] Took %.2f μs.%n", (firstEndTime - firstStartTime) / 1000f);
             }
 
             long secondStartTime = System.nanoTime();
@@ -35,7 +35,7 @@ public abstract class Day {
 
             if (secondResult != null) {
                 System.out.printf("[Advent of Code] Day %d second half solution '%s'.%n", this.day, secondResult);
-                System.out.printf("[Advent of Code] Took %.2f μs.", (secondEndTime - secondStartTime) / 1000f);
+                System.out.printf("[Advent of Code] Took %.2f μs.%n", (secondEndTime - secondStartTime) / 1000f);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
